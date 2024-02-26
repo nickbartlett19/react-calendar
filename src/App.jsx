@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1 className = "title">March</h1>
+      <h1 className = "title text-3xl font-bold underline">March</h1>
       <div className = "grid">
         <div className = "column">
           <div className = "calendar-cell">
