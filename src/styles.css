@@ -13,11 +13,6 @@
     height: 200px;
 }
 
-.grid {
-    display:flex;
-    flex-direction: row;
-}
-
 .column {
     flex: 0 0 175px;
     width: 175px;
