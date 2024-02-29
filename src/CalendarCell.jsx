@@ -8,7 +8,7 @@ export function CalendarCell() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (todos.length < 4) {
+    if (todos.length < 3) {
       setTodos(currentTodos => {
         return [...currentTodos,
         {id: crypto.randomUUID(), title: newItem, completed: false}]
