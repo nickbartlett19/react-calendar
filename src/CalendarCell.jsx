@@ -42,8 +42,7 @@ export function CalendarCell() {
 
   return (
     <>
-    <div className="w-36 h-56 bg-violet-900">
-      <h5>1</h5>
+    <div className="w-36 h-48 bg-violet-900">
       <form onSubmit = {handleSubmit} className = "new-item-form">
         <div className = "form-row">
         <label htmlFor = "item">New Item</label>

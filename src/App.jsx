@@ -5,16 +5,24 @@ import "./styles.css"
 const MONTH_LENGTHS = [31,28,31,30,31,30,31,31,30,31,30,31];
 
 function App() {
+  let cellArr = Array(MONTH_LENGTHS[2]).fill(<><CalendarCell /></>);
+  let counter = 0;
 
   return (
     <>
-    <h1 className = "title text-3xl font-bold underline text-center">March</h1>
-    <div class ="flex h-screen w-screen justify-center items-center">
+      <h1 className = "text-3xl font-bold underline text-center">March</h1>
+      <div className ="flex h-screen w-screen justify-center items-center">
         <div className = "flex flex-wrap max-w-screen-xl justify-content align-items">
-          {Array(MONTH_LENGTHS[2]).fill(<><CalendarCell /></>)}
+          {cellArr.map(cell => {
+            counter++;
+            return (
+              <div className = "flex-column">
+                <h5>{counter}</h5>
+                {cell}
+              </div>)
+          })}
         </div>
-        {/* <h1> test centering</h1> */}
-    </div>
+      </div>
     </>
   )
 }
