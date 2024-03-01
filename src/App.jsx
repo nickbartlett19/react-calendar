@@ -10,8 +10,8 @@ function App() {
 
   return (
     <>
-      <h1 className = "text-3xl font-bold underline text-center">March</h1>
-      <div className ="flex h-screen w-screen justify-center items-center">
+      <h1 className = "text-3xl font-bold underline text-center mb-5">March</h1>
+      <div className ="flex w-screen justify-center items-center">
         <div className = "flex flex-wrap max-w-screen-xl justify-content align-items">
           {cellArr.map(cell => {
             counter++;
